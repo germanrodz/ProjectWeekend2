@@ -1,0 +1,44 @@
+<FrameLayout
+
+    android:background="#fafafa"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blovvme.projectweekend2.TimerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clock" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:background="#FF257E23"
+        android:layout_weight="1"
+        android:id="@+id/btnStart"
+        android:text="Start"
+        android:textColor="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <Button
+            android:background="#FF257E23"
+            android:layout_weight="1"
+            android:id="@+id/btnStop"
+            android:text="Stop"
+            android:textColor="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FF257E23"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blovvme.projectweekend2.MessageActivity">
+
+    <EditText
+        android:ems="10"
+        android:background="#ffffff"
+        android:id="@+id/txtphoneNo"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="74dp" />
+    <EditText
+        android:ems="10"
+        android:hint="text"
+        android:background="#ffffff"
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    <Button
+        android:background="#FF257E23"
+        android:textColor="#ffffff"
+        android:id="@+id/sendBtn"
+        android:text="Send SMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+</LinearLayout>

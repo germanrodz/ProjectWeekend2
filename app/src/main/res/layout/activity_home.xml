@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FF257E23"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blovvme.projectweekend2.HomeActivity">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/pdfView">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="alertDialog"
+            android:id="@+id/btn1"
+            android:textColor="#fafafa"
+            android:background="#FF257E23"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="onNotification"
+            android:id="@+id/btn2"
+            android:textColor="#fafafa"
+            android:background="#FF257E23"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn3"
+            android:onClick="messageActivity"
+            android:textColor="#fafafa"
+            android:background="#FF257E23"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="SMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <fragment
+        android:name="com.blovvme.projectweekend2.TimerFragment"
+        android:id="@+id/timerfrag"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <fragment
+        android:name="com.blovvme.projectweekend2.ClockFragment"
+        android:id="@+id/clockfrag"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+
+
+
+</LinearLayout>
